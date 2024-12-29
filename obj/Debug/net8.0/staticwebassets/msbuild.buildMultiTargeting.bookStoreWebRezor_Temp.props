@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\bookStoreWebRezor_Temp.props" />
+</Project>
