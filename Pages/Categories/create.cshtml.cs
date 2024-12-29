@@ -22,6 +22,7 @@ namespace bookStoreWebRezor_Temp.Pages.Categories
         {
             _db.Categories.Add(Category);
             _db.SaveChanges();
+            TempData["success"] = "category created successfully";
             return RedirectToPage("Index");
 
         }

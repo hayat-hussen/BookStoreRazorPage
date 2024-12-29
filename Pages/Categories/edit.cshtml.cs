@@ -46,6 +46,7 @@ namespace bookStoreWebRezor_Temp.Pages.Categories
 
             _db.Categories.Update(categoryFromDb); // Update the category in the database
             _db.SaveChanges(); // Save changes to the database
+            TempData["success"] = "category updated successfully";
 
             return RedirectToPage("Index"); // Redirect to the index page after the update
         }

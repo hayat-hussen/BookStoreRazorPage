@@ -42,6 +42,7 @@ namespace bookStoreWebRezor_Temp.Pages.Categories
 
             _db.Categories.Remove(categoryFromDb); // Remove the category from the database
             _db.SaveChanges(); // Save changes to the database
+            TempData["success"] = "category deleted successfully";
 
             return RedirectToPage("Index"); // Redirect to the index page after deletion
         }
